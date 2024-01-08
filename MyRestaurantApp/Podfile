@@ -21,3 +21,14 @@ target 'Core' do
 
 end
 
+target 'Home' do
+  project '../Modules/Home/Home'
+	# pod 'Alamofire'
+
+end
+
+target 'Detail' do
+  project '../Modules/Detail/Detail'
+	# pod 'Alamofire'
+
+end

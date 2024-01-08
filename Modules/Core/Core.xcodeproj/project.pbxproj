@@ -18,6 +18,7 @@
 		DD3CB7302B4BF47700DD577C /* GetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3CB72F2B4BF47700DD577C /* GetPresenter.swift */; };
 		DD3CB7332B4BF49A00DD577C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB7322B4BF49A00DD577C /* RxCocoa */; };
 		DD3CB7352B4BF49A00DD577C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB7342B4BF49A00DD577C /* RxRelay */; };
+		DD3CB7612B4BF67100DD577C /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3CB7602B4BF67100DD577C /* Mapper.swift */; };
 		DD9E3B7D2B4BF325000C7732 /* Core.docc in Sources */ = {isa = PBXBuildFile; fileRef = DD9E3B7C2B4BF325000C7732 /* Core.docc */; };
 		DD9E3B7E2B4BF325000C7732 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3B7B2B4BF325000C7732 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		DD3CB72A2B4BF44400DD577C /* CustomError+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Ext.swift"; sourceTree = "<group>"; };
 		DD3CB72D2B4BF46200DD577C /* GetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListPresenter.swift; sourceTree = "<group>"; };
 		DD3CB72F2B4BF47700DD577C /* GetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPresenter.swift; sourceTree = "<group>"; };
+		DD3CB7602B4BF67100DD577C /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DD9E3B782B4BF325000C7732 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9E3B7B2B4BF325000C7732 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		DD9E3B7C2B4BF325000C7732 /* Core.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Core.docc; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				DD3CB71B2B4BF3A700DD577C /* Data */,
 				DD9E3B7B2B4BF325000C7732 /* Core.h */,
 				DD9E3B7C2B4BF325000C7732 /* Core.docc */,
+				DD3CB7602B4BF67100DD577C /* Mapper.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				DD3CB7262B4BF41200DD577C /* UseCase.swift in Sources */,
 				DD3CB71F2B4BF3D600DD577C /* DataSource.swift in Sources */,
 				DD3CB7302B4BF47700DD577C /* GetPresenter.swift in Sources */,
+				DD3CB7612B4BF67100DD577C /* Mapper.swift in Sources */,
 				DD3CB71D2B4BF3B900DD577C /* LocaleDataSource.swift in Sources */,
 				DD3CB72B2B4BF44400DD577C /* CustomError+Ext.swift in Sources */,
 				DD3CB72E2B4BF46200DD577C /* GetListPresenter.swift in Sources */,
