@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+
+# platform :ios, '16.0'
+# platform :ios, '9.0'
+
+use_frameworks!
+
+workspace 'Modularization'
+ 
+target 'MyRestaurantApp' do
+  # Pods for App
+	 pod 'RealmSwift'
+	 #pod 'Realm'
+	# pod 'SDWebImageSwiftUI', '>= 0'
+	# pod 'Alamofire'
+end
+ 
+target 'Core' do
+  project '../Modules/Core/Core'
+	# pod 'Alamofire'
+
+end
+
