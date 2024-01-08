@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115E3748C6B60AC8064B5BB5 /* Pods_MyRestaurantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4E34E76A9ABC7EA328E565 /* Pods_MyRestaurantApp.framework */; };
+		0399DF6C475560664ED30123 /* Pods_MyRestaurantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C8C4D0DABFABCF3ECF39E /* Pods_MyRestaurantApp.framework */; };
 		DD3CB7382B4BF4B700DD577C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB7372B4BF4B700DD577C /* RxCocoa */; };
 		DD3CB73A2B4BF4B700DD577C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB7392B4BF4B700DD577C /* RxRelay */; };
 		DD3CB73D2B4BF4C300DD577C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB73C2B4BF4C300DD577C /* Alamofire */; };
 		DD3CB7402B4BF4CB00DD577C /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB73F2B4BF4CB00DD577C /* SimpleToast */; };
-		DD3CB7432B4BF50A00DD577C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB7422B4BF50A00DD577C /* Realm */; };
-		DD3CB7452B4BF50A00DD577C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD3CB7442B4BF50A00DD577C /* RealmSwift */; };
 		DD3CB7472B4BF51300DD577C /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3CB7462B4BF51300DD577C /* Core.framework */; };
 		DD3CB7482B4BF51300DD577C /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD3CB7462B4BF51300DD577C /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD41E9B52B4BF0180050B130 /* MyRestaurantAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41E9B42B4BF0180050B130 /* MyRestaurantAppApp.swift */; };
@@ -29,6 +27,12 @@
 		DD41E9EA2B4BF1420050B130 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41E9E92B4BF1420050B130 /* HomeView.swift */; };
 		DD41E9EC2B4BF16F0050B130 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41E9EB2B4BF16F0050B130 /* FavoriteView.swift */; };
 		DD41E9EE2B4BF1900050B130 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41E9ED2B4BF1900050B130 /* DetailView.swift */; };
+		DD4709B32B4BFB290088BA58 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709B12B4BFB290088BA58 /* Detail.framework */; };
+		DD4709B42B4BFB290088BA58 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709B12B4BFB290088BA58 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD4709B52B4BFB290088BA58 /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709B22B4BFB290088BA58 /* Favorite.framework */; };
+		DD4709B62B4BFB290088BA58 /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709B22B4BFB290088BA58 /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD4709B92B4C01740088BA58 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DD4709B82B4C01740088BA58 /* Realm */; };
+		DD4709BB2B4C01740088BA58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD4709BA2B4C01740088BA58 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +59,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DD4709B62B4BFB290088BA58 /* Favorite.framework in Embed Frameworks */,
 				DD3CB7482B4BF51300DD577C /* Core.framework in Embed Frameworks */,
+				DD4709B42B4BFB290088BA58 /* Detail.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,9 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0FA4E502EDC7F73AE79A083A /* Pods-MyRestaurantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRestaurantApp.debug.xcconfig"; path = "Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp.debug.xcconfig"; sourceTree = "<group>"; };
-		7ED95FD124914632A4873F88 /* Pods-MyRestaurantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRestaurantApp.release.xcconfig"; path = "Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp.release.xcconfig"; sourceTree = "<group>"; };
-		AD4E34E76A9ABC7EA328E565 /* Pods_MyRestaurantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRestaurantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		403C8C4D0DABFABCF3ECF39E /* Pods_MyRestaurantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRestaurantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B734DB518C1CD6189B2BC17 /* Pods-MyRestaurantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRestaurantApp.release.xcconfig"; path = "Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp.release.xcconfig"; sourceTree = "<group>"; };
 		DD3CB7462B4BF51300DD577C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD41E9B12B4BF0180050B130 /* MyRestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD41E9B42B4BF0180050B130 /* MyRestaurantAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestaurantAppApp.swift; sourceTree = "<group>"; };
@@ -83,6 +88,9 @@
 		DD41E9E92B4BF1420050B130 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD41E9EB2B4BF16F0050B130 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		DD41E9ED2B4BF1900050B130 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DD4709B12B4BFB290088BA58 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4709B22B4BFB290088BA58 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2736984C74EC0B8C6AFEF4E /* Pods-MyRestaurantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRestaurantApp.debug.xcconfig"; path = "Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +98,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD3CB7432B4BF50A00DD577C /* Realm in Frameworks */,
 				DD3CB73A2B4BF4B700DD577C /* RxRelay in Frameworks */,
-				DD3CB7452B4BF50A00DD577C /* RealmSwift in Frameworks */,
+				DD4709B32B4BFB290088BA58 /* Detail.framework in Frameworks */,
 				DD3CB7472B4BF51300DD577C /* Core.framework in Frameworks */,
 				DD3CB73D2B4BF4C300DD577C /* Alamofire in Frameworks */,
+				DD4709B52B4BFB290088BA58 /* Favorite.framework in Frameworks */,
 				DD3CB7382B4BF4B700DD577C /* RxCocoa in Frameworks */,
-				115E3748C6B60AC8064B5BB5 /* Pods_MyRestaurantApp.framework in Frameworks */,
+				DD4709B92B4C01740088BA58 /* Realm in Frameworks */,
 				DD3CB7402B4BF4CB00DD577C /* SimpleToast in Frameworks */,
+				DD4709BB2B4C01740088BA58 /* RealmSwift in Frameworks */,
+				0399DF6C475560664ED30123 /* Pods_MyRestaurantApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +131,8 @@
 		88006F240B015E1045188BBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0FA4E502EDC7F73AE79A083A /* Pods-MyRestaurantApp.debug.xcconfig */,
-				7ED95FD124914632A4873F88 /* Pods-MyRestaurantApp.release.xcconfig */,
+				F2736984C74EC0B8C6AFEF4E /* Pods-MyRestaurantApp.debug.xcconfig */,
+				4B734DB518C1CD6189B2BC17 /* Pods-MyRestaurantApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -130,8 +140,10 @@
 		C930CE600FB3442937FD12B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD4709B12B4BFB290088BA58 /* Detail.framework */,
+				DD4709B22B4BFB290088BA58 /* Favorite.framework */,
 				DD3CB7462B4BF51300DD577C /* Core.framework */,
-				AD4E34E76A9ABC7EA328E565 /* Pods_MyRestaurantApp.framework */,
+				403C8C4D0DABFABCF3ECF39E /* Pods_MyRestaurantApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,12 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD41E9D52B4BF0190050B130 /* Build configuration list for PBXNativeTarget "MyRestaurantApp" */;
 			buildPhases = (
-				2884B508D4A05573D1363491 /* [CP] Check Pods Manifest.lock */,
+				792F3CC3183CCF5AC2822363 /* [CP] Check Pods Manifest.lock */,
 				DD41E9AD2B4BF0180050B130 /* Sources */,
 				DD41E9AE2B4BF0180050B130 /* Frameworks */,
 				DD41E9AF2B4BF0180050B130 /* Resources */,
-				4BD98674D03C682BFCEDF3E3 /* [CP] Embed Pods Frameworks */,
 				DD3CB7492B4BF51300DD577C /* Embed Frameworks */,
+				307E72B7A755B3194B463561 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,8 +276,8 @@
 				DD3CB7392B4BF4B700DD577C /* RxRelay */,
 				DD3CB73C2B4BF4C300DD577C /* Alamofire */,
 				DD3CB73F2B4BF4CB00DD577C /* SimpleToast */,
-				DD3CB7422B4BF50A00DD577C /* Realm */,
-				DD3CB7442B4BF50A00DD577C /* RealmSwift */,
+				DD4709B82B4C01740088BA58 /* Realm */,
+				DD4709BA2B4C01740088BA58 /* RealmSwift */,
 			);
 			productName = MyRestaurantApp;
 			productReference = DD41E9B12B4BF0180050B130 /* MyRestaurantApp.app */;
@@ -343,7 +355,7 @@
 				DD3CB7362B4BF4B700DD577C /* XCRemoteSwiftPackageReference "RxSwift" */,
 				DD3CB73B2B4BF4C300DD577C /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DD3CB73E2B4BF4CB00DD577C /* XCRemoteSwiftPackageReference "SimpleToast" */,
-				DD3CB7412B4BF50A00DD577C /* XCRemoteSwiftPackageReference "realm-swift" */,
+				DD4709B72B4C01740088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = DD41E9B22B4BF0180050B130 /* Products */;
 			projectDirPath = "";
@@ -383,7 +395,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2884B508D4A05573D1363491 /* [CP] Check Pods Manifest.lock */ = {
+		307E72B7A755B3194B463561 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792F3CC3183CCF5AC2822363 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,23 +432,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BD98674D03C682BFCEDF3E3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyRestaurantApp/Pods-MyRestaurantApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -594,7 +606,7 @@
 		};
 		DD41E9D62B4BF0190050B130 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FA4E502EDC7F73AE79A083A /* Pods-MyRestaurantApp.debug.xcconfig */;
+			baseConfigurationReference = F2736984C74EC0B8C6AFEF4E /* Pods-MyRestaurantApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -623,7 +635,7 @@
 		};
 		DD41E9D72B4BF0190050B130 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ED95FD124914632A4873F88 /* Pods-MyRestaurantApp.release.xcconfig */;
+			baseConfigurationReference = 4B734DB518C1CD6189B2BC17 /* Pods-MyRestaurantApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -788,7 +800,7 @@
 				minimumVersion = 0.8.1;
 			};
 		};
-		DD3CB7412B4BF50A00DD577C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		DD4709B72B4C01740088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
@@ -819,14 +831,14 @@
 			package = DD3CB73E2B4BF4CB00DD577C /* XCRemoteSwiftPackageReference "SimpleToast" */;
 			productName = SimpleToast;
 		};
-		DD3CB7422B4BF50A00DD577C /* Realm */ = {
+		DD4709B82B4C01740088BA58 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DD3CB7412B4BF50A00DD577C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = DD4709B72B4C01740088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		DD3CB7442B4BF50A00DD577C /* RealmSwift */ = {
+		DD4709BA2B4C01740088BA58 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DD3CB7412B4BF50A00DD577C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = DD4709B72B4C01740088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

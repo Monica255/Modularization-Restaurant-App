@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import RealmSwift
+
+public class RestaurantFavEntity: Object{
+    @objc dynamic var id: String = ""
+    @objc dynamic var name: String = ""
+    @objc dynamic var city: String = ""
+    @objc dynamic var pictureId: String = ""
+    
+    public override static func primaryKey() -> String? {
+        return "id"
+    }
+}

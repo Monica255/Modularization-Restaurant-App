@@ -5,34 +5,22 @@
 //  Created by Monica Sucianto on 08/01/24.
 //
 
-import Core
+import Foundation
 
-public struct RestaurantTransformer: Mapper{
-    
-    public typealias Response = [RestaurantResponse]
-    public typealias Entity = Any
-    public typealias Domain = [RestaurantDomainModel]
-    
-    public init() {}
-    
-    public func transformResponseToDomain(response: Response) -> Domain {
-        return response.map { response in
-            let model = RestaurantDomainModel(
-                id: response.id,
-                name: response.name,
-                city: response.city,
-                pictureId: response.pictureId)
-            return model
+public struct RestaurantDomainModel: Equatable ,Identifiable{
+    public var id: String
+    public var name: String
+    public var city: String
+    public var pictureId: String
+    public var imageURL: URL {
+            let baseURL = "https://restaurant-api.dicoding.dev/images/medium/"
+            return URL(string: baseURL + pictureId)!
         }
+    
+    public init(id: String, name: String, city: String, pictureId: String) {
+        self.id = id
+        self.name = name
+        self.city = city
+        self.pictureId = pictureId
     }
-    
-    public func transformDomainToEntity(domain: Domain) -> Entity {
-        fatalError()
-    }
-    
-    public func transformEntityToDomain(entity: Entity) -> Domain {
-        fatalError()
-    }
-    
-    
 }

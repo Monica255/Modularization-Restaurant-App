@@ -73,13 +73,10 @@ let getfavUseCase: Interactor<
 > = Injection.init().provideGetFavorite()
 
 struct ListCell: View {
-    //    let presenter: DetailPresenter
     let detailPresenter = GetPresenter(detailUseCase: detailUseCase, addFavUseCase: addfavUseCase, deleteFavUseCase: deletefavUseCase, getFavUseCase: getfavUseCase)
-//    let favoritePresenter = FavoritePresenter(favUseCase: Injection.init().provideFavoriteUseCase())
-    
     var res: RestaurantDomainModel
     var body: some View {
-        NavigationLink(destination: DetailView(resId: res.id).environmentObject(detailPresenter)){
+        NavigationLink(destination: DetailView(resId: res.id)){
             HStack{
                 OnlineImage(url: res.imageURL)
                 VStack(alignment:.leading){

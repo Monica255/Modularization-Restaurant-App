@@ -7,14 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5A0F7811A6E4411149DDB4D /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A523E684836CEF949894B38 /* Pods_Favorite.framework */; };
 		DD4709852B4BF9710088BA58 /* Favorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = DD4709842B4BF9710088BA58 /* Favorite.docc */; };
 		DD4709862B4BF9710088BA58 /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4709832B4BF9710088BA58 /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD47098E2B4BF9BE0088BA58 /* DetailFavoriteTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD47098D2B4BF9BE0088BA58 /* DetailFavoriteTransformer.swift */; };
+		DD4709902B4BF9D20088BA58 /* FavoriteTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD47098F2B4BF9D20088BA58 /* FavoriteTransformer.swift */; };
+		DD4709932B4BF9F00088BA58 /* Result+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4709922B4BF9F00088BA58 /* Result+Ext.swift */; };
+		DD4709962B4BFA0B0088BA58 /* GetFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4709952B4BFA0B0088BA58 /* GetFavoriteRepository.swift */; };
+		DD4709992B4BFA270088BA58 /* GetFavoriteLocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4709982B4BFA270088BA58 /* GetFavoriteLocaleDataSource.swift */; };
+		DD47099C2B4BFA450088BA58 /* RestaurantEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD47099B2B4BFA450088BA58 /* RestaurantEntity.swift */; };
+		DD47099F2B4BFA670088BA58 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DD47099E2B4BFA670088BA58 /* RxCocoa */; };
+		DD4709A12B4BFA670088BA58 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DD4709A02B4BFA670088BA58 /* RxRelay */; };
+		DD4709A42B4BFA710088BA58 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DD4709A32B4BFA710088BA58 /* Realm */; };
+		DD4709A62B4BFA710088BA58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD4709A52B4BFA710088BA58 /* RealmSwift */; };
+		DD4709AA2B4BFA790088BA58 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709A72B4BFA790088BA58 /* Core.framework */; };
+		DD4709AB2B4BFA790088BA58 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709A72B4BFA790088BA58 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD4709AC2B4BFA790088BA58 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709A82B4BFA790088BA58 /* Detail.framework */; };
+		DD4709AD2B4BFA790088BA58 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709A82B4BFA790088BA58 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD4709AE2B4BFA790088BA58 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709A92B4BFA790088BA58 /* Home.framework */; };
+		DD4709AF2B4BFA790088BA58 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD4709A92B4BFA790088BA58 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DD4709B02B4BFA790088BA58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD4709AB2B4BFA790088BA58 /* Core.framework in Embed Frameworks */,
+				DD4709AD2B4BFA790088BA58 /* Detail.framework in Embed Frameworks */,
+				DD4709AF2B4BFA790088BA58 /* Home.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		25972F86CB32AEC58143A6EA /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.debug.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
+		2A523E684836CEF949894B38 /* Pods_Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80EB22B1DF4B0E1373F76818 /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.release.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
 		DD4709802B4BF9710088BA58 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4709832B4BF9710088BA58 /* Favorite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
 		DD4709842B4BF9710088BA58 /* Favorite.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Favorite.docc; sourceTree = "<group>"; };
+		DD47098D2B4BF9BE0088BA58 /* DetailFavoriteTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoriteTransformer.swift; sourceTree = "<group>"; };
+		DD47098F2B4BF9D20088BA58 /* FavoriteTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTransformer.swift; sourceTree = "<group>"; };
+		DD4709922B4BF9F00088BA58 /* Result+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ext.swift"; sourceTree = "<group>"; };
+		DD4709952B4BFA0B0088BA58 /* GetFavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteRepository.swift; sourceTree = "<group>"; };
+		DD4709982B4BFA270088BA58 /* GetFavoriteLocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteLocaleDataSource.swift; sourceTree = "<group>"; };
+		DD47099B2B4BFA450088BA58 /* RestaurantEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEntity.swift; sourceTree = "<group>"; };
+		DD4709A72B4BFA790088BA58 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4709A82B4BFA790088BA58 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4709A92B4BFA790088BA58 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +67,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4709A12B4BFA670088BA58 /* RxRelay in Frameworks */,
+				DD4709AA2B4BFA790088BA58 /* Core.framework in Frameworks */,
+				DD47099F2B4BFA670088BA58 /* RxCocoa in Frameworks */,
+				DD4709AE2B4BFA790088BA58 /* Home.framework in Frameworks */,
+				DD4709A42B4BFA710088BA58 /* Realm in Frameworks */,
+				DD4709A62B4BFA710088BA58 /* RealmSwift in Frameworks */,
+				A5A0F7811A6E4411149DDB4D /* Pods_Favorite.framework in Frameworks */,
+				DD4709AC2B4BFA790088BA58 /* Detail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0086A8B4D829BE89F0F25011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25972F86CB32AEC58143A6EA /* Pods-Favorite.debug.xcconfig */,
+				80EB22B1DF4B0E1373F76818 /* Pods-Favorite.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../MyRestaurantApp/Pods;
+			sourceTree = "<group>";
+		};
+		B8F983E0FCEF55C58694B446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4709A72B4BFA790088BA58 /* Core.framework */,
+				DD4709A82B4BFA790088BA58 /* Detail.framework */,
+				DD4709A92B4BFA790088BA58 /* Home.framework */,
+				2A523E684836CEF949894B38 /* Pods_Favorite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD4709762B4BF9710088BA58 = {
 			isa = PBXGroup;
 			children = (
 				DD4709822B4BF9710088BA58 /* Favorite */,
 				DD4709812B4BF9710088BA58 /* Products */,
+				0086A8B4D829BE89F0F25011 /* Pods */,
+				B8F983E0FCEF55C58694B446 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,10 +123,56 @@
 		DD4709822B4BF9710088BA58 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				DD4709942B4BFA020088BA58 /* Data */,
+				DD4709912B4BF9E60088BA58 /* Extension */,
+				DD47098C2B4BF9B40088BA58 /* Util */,
 				DD4709832B4BF9710088BA58 /* Favorite.h */,
 				DD4709842B4BF9710088BA58 /* Favorite.docc */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		DD47098C2B4BF9B40088BA58 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DD47098D2B4BF9BE0088BA58 /* DetailFavoriteTransformer.swift */,
+				DD47098F2B4BF9D20088BA58 /* FavoriteTransformer.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DD4709912B4BF9E60088BA58 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD4709922B4BF9F00088BA58 /* Result+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD4709942B4BFA020088BA58 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD4709972B4BFA180088BA58 /* Locale */,
+				DD4709952B4BFA0B0088BA58 /* GetFavoriteRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DD4709972B4BFA180088BA58 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				DD47099A2B4BFA390088BA58 /* Entity */,
+				DD4709982B4BFA270088BA58 /* GetFavoriteLocaleDataSource.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		DD47099A2B4BFA390088BA58 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD47099B2B4BFA450088BA58 /* RestaurantEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,16 +193,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD4709892B4BF9710088BA58 /* Build configuration list for PBXNativeTarget "Favorite" */;
 			buildPhases = (
+				3AF586C0A882A20F568F8D85 /* [CP] Check Pods Manifest.lock */,
 				DD47097B2B4BF9710088BA58 /* Headers */,
 				DD47097C2B4BF9710088BA58 /* Sources */,
 				DD47097D2B4BF9710088BA58 /* Frameworks */,
 				DD47097E2B4BF9710088BA58 /* Resources */,
+				DD4709B02B4BFA790088BA58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Favorite;
+			packageProductDependencies = (
+				DD47099E2B4BFA670088BA58 /* RxCocoa */,
+				DD4709A02B4BFA670088BA58 /* RxRelay */,
+				DD4709A32B4BFA710088BA58 /* Realm */,
+				DD4709A52B4BFA710088BA58 /* RealmSwift */,
+			);
 			productName = Favorite;
 			productReference = DD4709802B4BF9710088BA58 /* Favorite.framework */;
 			productType = "com.apple.product-type.framework";
@@ -108,6 +238,10 @@
 				Base,
 			);
 			mainGroup = DD4709762B4BF9710088BA58;
+			packageReferences = (
+				DD47099D2B4BFA670088BA58 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DD4709A22B4BFA710088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = DD4709812B4BF9710088BA58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,11 +261,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AF586C0A882A20F568F8D85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Favorite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD47097C2B4BF9710088BA58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4709902B4BF9D20088BA58 /* FavoriteTransformer.swift in Sources */,
+				DD47098E2B4BF9BE0088BA58 /* DetailFavoriteTransformer.swift in Sources */,
+				DD4709932B4BF9F00088BA58 /* Result+Ext.swift in Sources */,
+				DD47099C2B4BFA450088BA58 /* RestaurantEntity.swift in Sources */,
+				DD4709992B4BFA270088BA58 /* GetFavoriteLocaleDataSource.swift in Sources */,
+				DD4709962B4BFA0B0088BA58 /* GetFavoriteRepository.swift in Sources */,
 				DD4709852B4BF9710088BA58 /* Favorite.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +431,7 @@
 		};
 		DD47098A2B4BF9710088BA58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25972F86CB32AEC58143A6EA /* Pods-Favorite.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -296,6 +462,7 @@
 		};
 		DD47098B2B4BF9710088BA58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EB22B1DF4B0E1373F76818 /* Pods-Favorite.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -346,6 +513,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD47099D2B4BFA670088BA58 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		DD4709A22B4BFA710088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD47099E2B4BFA670088BA58 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD47099D2B4BFA670088BA58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DD4709A02B4BFA670088BA58 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD47099D2B4BFA670088BA58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		DD4709A32B4BFA710088BA58 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD4709A22B4BFA710088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DD4709A52B4BFA710088BA58 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD4709A22B4BFA710088BA58 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD4709772B4BF9710088BA58 /* Project object */;
 }
